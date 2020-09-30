@@ -9,7 +9,8 @@ export default class SearchPanel extends Component {
     data: null,    
     load: true,
     error: false,
-    searchValue: ''
+    searchValue: '',
+    selectValue: 10,
   } 
 
   onLoadData = (value) => {
@@ -23,14 +24,21 @@ export default class SearchPanel extends Component {
       return {searchValue: value};
     }); 
     this.onLoadData(value);       
-  }  
+  }
+
+  onValueSelect = ({target}) => {
+    let value = target.value;
+    this.setState(({selectValue}) => {
+      return { selectValue: value }
+    });
+  }
 
   renderItem(arr, index, searchValue) {
     const reg = new RegExp("^[a-zA-Z]+$");    
     let items = [];
     let quantity = index > arr.length ? arr.length : index;    
     for (let i = 0; i < quantity; i++) {      
-      items.push(<span className="matchItem" key={arr[i].countryID}>{`${i + 1}. ${arr[i].countryName}`}</span>);
+      items.push(<span className ="matchItem" key={arr[i].countryID}>{`${arr[i].countryName}`} <img className = "matchImg" src={arr[i].imgFlag} alt={arr[i].countryName} /></span>);
     }
     if (!items.length) items = 'Такого значения не существует';
     if (!reg.test(searchValue)) items = 'Только латинские символы';
@@ -38,8 +46,8 @@ export default class SearchPanel extends Component {
   }
 
   render () {
-    const { data, load, searchValue } = this.state;
-    const viewDropPownMatch = searchValue ? <DropPownMatch data = { data } load = { load } renderItem = { this.renderItem } searchValue= { searchValue }/> : null;
+    const { data, load, searchValue, selectValue } = this.state;
+    const viewDropPownMatch = searchValue ? <DropPownMatch data = { data } load = { load } renderItem = { this.renderItem } searchValue= { searchValue } selectValue = { selectValue }/> : null;
     
      
     
@@ -47,14 +55,9 @@ export default class SearchPanel extends Component {
       <section className="searchPanel">
         <div className = "blockInp">
           <SearchInput onValueSerh = { this.onValueSerh }/>
-          <InputSelect />
-          
-        </div>
-        
-        { viewDropPownMatch }
-        
-        
-        
+          <InputSelect onValueSelect = { this.onValueSelect }/>          
+        </div>        
+        { viewDropPownMatch }        
       </section>      
     );
   }
@@ -77,8 +80,9 @@ class SearchInput extends Component {
     const { value } = this.state;
     
     return(
-      <div className="searchInput">
-        <input type= "text" placeholder="input country" value = {value} onChange = {this.changeSearchInt}/>
+      <div className="blockSearchInput">
+        <input className = "searchInput" id="search"  type= "text" placeholder="input country" value = {value} onChange = {this.changeSearchInt}/>
+        <label for="name" class="searchLabel">Country</label>
       </div>
     );
   }  
@@ -86,10 +90,10 @@ class SearchInput extends Component {
 
 // ************************************************************************
 
-const DropPownMatch = ({ data, load, renderItem, searchValue }) => {    
+const DropPownMatch = ({ data, load, renderItem, searchValue, selectValue }) => {    
   const hasData = (data && !load);
   let viewLoader = load ? < Loader /> : null;
-  let viewItem = hasData ? renderItem(data, 10, searchValue) : null;      
+  let viewItem = hasData ? renderItem(data, selectValue, searchValue) : null;      
   return(
     <div className="blockMatch">
       { viewLoader }
@@ -98,14 +102,14 @@ const DropPownMatch = ({ data, load, renderItem, searchValue }) => {
   );  
 }
 
-const InputSelect = () => {
+const InputSelect = ({onValueSelect}) => {
 
   return(
     <React.Fragment>
-      <select>
-        <option>10</option>
-        <option>50</option>
-        <option>100</option>
+      <select className="inpSelect" onChange = { onValueSelect }>
+        <option value='10' selected>10</option>
+        <option value='50'>50</option>
+        <option value='100'>100</option>
       </select>
     </React.Fragment>
   );

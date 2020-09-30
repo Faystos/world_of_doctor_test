@@ -1,13 +1,95 @@
+*,
+*::after,
+*::before { 
+  box-sizing: border-box;
+}
+
+html body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.searchPanel {
+  width: 100%;
+  min-height: 100vh;  
+  background: url(../img/country.jpg) center / cover no-repeat;    
+  padding: 3.5rem 0.5rem 0.5rem 0.5rem;
+}
+
 .blockMatch {
   display: flex;
-  width: 159px;
-  flex-direction: column;
-  border: 1px solid rgb(0, 0, 0);
+  width: 500px;
+  height: 300px;
+  overflow-y: auto;
+  flex-direction: column;  
   padding: 0.5rem;
+  margin: 2rem auto 0 auto;
+  border-radius: 0.2rem;  
+  background: linear-gradient(to right,#2c5364, #203a43, #0f2027);
+}
+
+.matchItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 0 0 0 0;
+}
+
+.matchImg {
+  width: 30px;
+  height: 30px;
 }
 
 .blockInp {
   display: flex;
-  justify-content: space-between;
-  width: 230px;
+  justify-content: space-around;
+  width: 450px;
+  margin: 0 auto;  
+}
+
+.blockSearchInput {
+  height: 50px;
+}
+
+.searchLabel {
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+  transform: translateY(0rem);
+}
+
+.searchInput {
+  color: #333;
+  font-size: 1.2rem;
+	margin: 0 auto;
+  padding: 1.5rem 2rem;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  width: 90%;
+  display: block;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+}
+
+.inpSelect {  
+  width: 17%;
+  padding: 1.5rem 0.2rem;
+  font-size: 1.2rem;
+  color: #333;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 0.2rem;
+  border-bottom: 0.3rem solid transparent;
+}
+
+.searchInput:placeholder-shown + .searchLabel {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+  transform: translateY(-4rem);
 }
