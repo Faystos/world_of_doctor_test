@@ -47,7 +47,7 @@ export default class SearchPanel extends Component {
     let items = [];
     let quantity = index > arr.length ? arr.length : index;    
     for (let i = 0; i < quantity; i++) {      
-      items.push(<span className ="matchItem" key={arr[i].countryID}>{`${arr[i].countryName}`} <img className = "matchImg" src={arr[i].imgFlag} alt={arr[i].countryName} /></span>);
+      items.push(<span className ="matchItem" key={arr[i].countryID}>{`${i + 1}. ${arr[i].countryName}`} <img className = "matchImg" src={arr[i].imgFlag} alt={arr[i].countryName} /></span>);
     }
     if (!items.length) items = 'Такого значения не существует';
     if (!reg.test(searchValue)) items = 'Только латинские символы';
