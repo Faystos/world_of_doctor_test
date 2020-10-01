@@ -5,7 +5,7 @@ export default class SearchInput extends Component {
     value: '',
   }
 
-  changeSearchInt = ({target}) => {
+  changeSearchInt = ({ target }) => {
     let value = target.value;  
     this.setState({ value });
     this.props.onValueSerh(value);
@@ -16,7 +16,7 @@ export default class SearchInput extends Component {
     
     return(
       <div className = "blockSearchInput">
-        <input className = "searchInput" id = "search"  type= "text" placeholder = "input country" value = {value} onChange = {this.changeSearchInt}/>
+        <input className = "searchInput" id = "search"  type= "text" placeholder = "input country" value = { value } onChange = { this.changeSearchInt }/>
         <label htmlFor  ="name" className = "searchLabel">Country</label>
       </div>
     );

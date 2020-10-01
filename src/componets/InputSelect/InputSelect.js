@@ -1,6 +1,6 @@
 import React from 'react';
 
-const InputSelect = ({onValueSelect}) => {
+const InputSelect = ({ onValueSelect }) => {
   return(
     <React.Fragment>
       <select className = "inpSelect" onChange = { onValueSelect }>
