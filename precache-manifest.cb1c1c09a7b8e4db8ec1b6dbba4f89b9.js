@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1e54d25c1b5b38979ab022649a095b94",
+    "revision": "35f736a621ce48e63d136617078217f9",
     "url": "/world_of_doctor_test/index.html"
   },
   {
-    "revision": "91e749e91297466c7e0b",
-    "url": "/world_of_doctor_test/static/css/main.ef1fc8f1.chunk.css"
+    "revision": "8ea78a1fd6d62fde152d",
+    "url": "/world_of_doctor_test/static/css/main.0249ce91.chunk.css"
   },
   {
     "revision": "912f99323c098b1fa487",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/world_of_doctor_test/static/js/2.012eae3d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "91e749e91297466c7e0b",
+    "revision": "8ea78a1fd6d62fde152d",
     "url": "/world_of_doctor_test/static/js/main.ec471513.chunk.js"
   },
   {

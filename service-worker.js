@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/world_of_doctor_test/precache-manifest.d30a14c67a91331f6934b576f56577f1.js"
+  "/world_of_doctor_test/precache-manifest.cb1c1c09a7b8e4db8ec1b6dbba4f89b9.js"
 );
 
 self.addEventListener('message', (event) => {

@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/world_of_doctor_test/static/css/main.ef1fc8f1.chunk.css",
+    "main.css": "/world_of_doctor_test/static/css/main.0249ce91.chunk.css",
     "main.js": "/world_of_doctor_test/static/js/main.ec471513.chunk.js",
     "main.js.map": "/world_of_doctor_test/static/js/main.ec471513.chunk.js.map",
     "runtime-main.js": "/world_of_doctor_test/static/js/runtime-main.adeca572.js",
@@ -8,9 +8,9 @@
     "static/js/2.012eae3d.chunk.js": "/world_of_doctor_test/static/js/2.012eae3d.chunk.js",
     "static/js/2.012eae3d.chunk.js.map": "/world_of_doctor_test/static/js/2.012eae3d.chunk.js.map",
     "index.html": "/world_of_doctor_test/index.html",
-    "precache-manifest.d30a14c67a91331f6934b576f56577f1.js": "/world_of_doctor_test/precache-manifest.d30a14c67a91331f6934b576f56577f1.js",
+    "precache-manifest.cb1c1c09a7b8e4db8ec1b6dbba4f89b9.js": "/world_of_doctor_test/precache-manifest.cb1c1c09a7b8e4db8ec1b6dbba4f89b9.js",
     "service-worker.js": "/world_of_doctor_test/service-worker.js",
-    "static/css/main.ef1fc8f1.chunk.css.map": "/world_of_doctor_test/static/css/main.ef1fc8f1.chunk.css.map",
+    "static/css/main.0249ce91.chunk.css.map": "/world_of_doctor_test/static/css/main.0249ce91.chunk.css.map",
     "static/js/2.012eae3d.chunk.js.LICENSE.txt": "/world_of_doctor_test/static/js/2.012eae3d.chunk.js.LICENSE.txt",
     "static/media/style.css": "/world_of_doctor_test/static/media/country.43271153.jpg",
     "static/media/error.png": "/world_of_doctor_test/static/media/error.aa9aacc3.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.adeca572.js",
     "static/js/2.012eae3d.chunk.js",
-    "static/css/main.ef1fc8f1.chunk.css",
+    "static/css/main.0249ce91.chunk.css",
     "static/js/main.ec471513.chunk.js"
   ]
 }
