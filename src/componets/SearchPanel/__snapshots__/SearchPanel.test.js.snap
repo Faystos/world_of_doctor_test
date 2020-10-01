@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test SearchPanel 1`] = `
+<section
+  className="searchPanel"
+>
+  <div
+    className="blockInp"
+  >
+    <div
+      className="blockSearchInput"
+    >
+      <input
+        className="searchInput"
+        id="search"
+        onChange={[Function]}
+        placeholder="input country"
+        type="text"
+        value=""
+      />
+      <label
+        className="searchLabel"
+        htmlFor="name"
+      >
+        Country
+      </label>
+    </div>
+    <select
+      className="inpSelect"
+      onChange={[Function]}
+    >
+      <option
+        value="10"
+      >
+        10
+      </option>
+      <option
+        value="20"
+      >
+        20
+      </option>
+      <option
+        value="50"
+      >
+        50
+      </option>
+    </select>
+  </div>
+</section>
+`;
