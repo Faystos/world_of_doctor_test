@@ -1,5 +1,6 @@
 export default class ApiService {
   _apiUrl = 'https://restcountries.eu/rest/v2/all';
+  
 
   async getResource() {
     try {

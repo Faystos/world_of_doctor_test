@@ -4,14 +4,48 @@ import './loader.css';
  const Loader = () => {
 
   return(
-    <div className="loadingio-spinner-magnify-b7n133anmrn">
-      <div className="ldio-cu6wun1vko">
-        <div>
-          <div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
+    <div className = "loadingio-spinner-spinner-i3zk22cdv5i">
+      <div className = "ldio-jg0nozfzrl">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
     </div>
   );
