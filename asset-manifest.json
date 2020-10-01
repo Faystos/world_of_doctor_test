@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.a43db055.chunk.css",
-    "main.js": "/static/js/main.c8e22582.chunk.js",
-    "main.js.map": "/static/js/main.c8e22582.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.4d3103fb.js",
-    "runtime-main.js.map": "/static/js/runtime-main.4d3103fb.js.map",
-    "static/js/2.012eae3d.chunk.js": "/static/js/2.012eae3d.chunk.js",
-    "static/js/2.012eae3d.chunk.js.map": "/static/js/2.012eae3d.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.864ebde7bb541001ef94ae2af9107acc.js": "/precache-manifest.864ebde7bb541001ef94ae2af9107acc.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.a43db055.chunk.css.map": "/static/css/main.a43db055.chunk.css.map",
-    "static/js/2.012eae3d.chunk.js.LICENSE.txt": "/static/js/2.012eae3d.chunk.js.LICENSE.txt",
-    "static/media/style.css": "/static/media/country.43271153.jpg",
-    "static/media/error.png": "/static/media/error.aa9aacc3.png"
+    "main.css": "/world_of_doctor_test/static/css/main.ef1fc8f1.chunk.css",
+    "main.js": "/world_of_doctor_test/static/js/main.ec471513.chunk.js",
+    "main.js.map": "/world_of_doctor_test/static/js/main.ec471513.chunk.js.map",
+    "runtime-main.js": "/world_of_doctor_test/static/js/runtime-main.adeca572.js",
+    "runtime-main.js.map": "/world_of_doctor_test/static/js/runtime-main.adeca572.js.map",
+    "static/js/2.012eae3d.chunk.js": "/world_of_doctor_test/static/js/2.012eae3d.chunk.js",
+    "static/js/2.012eae3d.chunk.js.map": "/world_of_doctor_test/static/js/2.012eae3d.chunk.js.map",
+    "index.html": "/world_of_doctor_test/index.html",
+    "precache-manifest.d30a14c67a91331f6934b576f56577f1.js": "/world_of_doctor_test/precache-manifest.d30a14c67a91331f6934b576f56577f1.js",
+    "service-worker.js": "/world_of_doctor_test/service-worker.js",
+    "static/css/main.ef1fc8f1.chunk.css.map": "/world_of_doctor_test/static/css/main.ef1fc8f1.chunk.css.map",
+    "static/js/2.012eae3d.chunk.js.LICENSE.txt": "/world_of_doctor_test/static/js/2.012eae3d.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/world_of_doctor_test/static/media/country.43271153.jpg",
+    "static/media/error.png": "/world_of_doctor_test/static/media/error.aa9aacc3.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.4d3103fb.js",
+    "static/js/runtime-main.adeca572.js",
     "static/js/2.012eae3d.chunk.js",
-    "static/css/main.a43db055.chunk.css",
-    "static/js/main.c8e22582.chunk.js"
+    "static/css/main.ef1fc8f1.chunk.css",
+    "static/js/main.ec471513.chunk.js"
   ]
 }
